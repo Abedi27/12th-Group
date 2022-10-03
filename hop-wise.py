@@ -3,10 +3,10 @@
 # hop-wise --> 21
 hop = int(input('enter number hop:'))
 wise = int(input('enter number wise:'))
- for num in range(1, 100):
+for num in range(1, 100):
     if hop < wise:
         number = 'hop-wise' if not num % (hop * wise) else 'hop' if not num % hop else 'wise' if not num % wise else str(num)
-   else:
+    else:
         number = 'hop-wise' if not num % (hop * wise) else 'wise' if not num % wise else 'hop' if not num % hop else str(num)
         print(number)
 # Hop Wise whit range
